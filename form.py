@@ -10,7 +10,7 @@ mobile_phone_number = "8472191797"
 symptoms = input("Do you have any symptoms?\nInput your symptoms as comma-separated numbers, following the below legend. \n0: No symptoms\n1: Fever or chills\n2: Cough\n3Shortness of breath or difficulty breathing\n4:Fatigue\n5:Muscle or body aches\n6: Headache (unlike your usual headaches)\n7: New Loss of Taste or Smell\n8: Sore Throat\n9: Congestion or runny nose\n10:Nausea or vomiting\n11: Diarrhea")
 symptoms = symptoms.split(',')
 symptomsDictionary = {
-    "0": "checkbox QR-QID22-21",
+    "0": "QR~QID22~21",
     "1": "QID22-1-label",
     "2": "QID22-2-label",
     "3": "QID22-3-label",
