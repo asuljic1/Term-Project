@@ -31,7 +31,7 @@ email_address = driver.find_element_by_xpath("//input[@name=\"QR~QID20~TEXT\"]")
     .send_keys(email_address)
 mobile_phone_number = driver.find_element_by_xpath("//input[@name=\"QR~QID21~TEXT\"]")\
     .send_keys(mobile_phone_number)
-symptoms = driver.find_element_by_xpath("/html/body/div[3]/div/form/div/div[2]/div[1]/div[3]/div[1]/div[12]/div[3]/div/fieldset/div/ul/li[12]/input").click()
+symptoms = driver.find_element_by_xpath("/html/body/div[3]/div/form/div/div[2]/div[1]/div[3]/div[1]/div[12]/div[3]/div/fieldset/div/ul/li[12]/span/label").click()
     
    
 
