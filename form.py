@@ -8,7 +8,6 @@ last_name = "Suljic"
 email_address = "asuljic1@babson.edu"
 mobile_phone_number = "8472191797"
 symptoms = {
-    "1": "QID22-1-label",
     "2": "QID22-2-label",
     "3": "QID22-3-label",
     "4": "QID22-4-label",
@@ -20,7 +19,7 @@ symptoms = {
     "10": "QID22-10-label",
     "11": "QID22-21-label",
 }
-symptoms = input("Do you have any symptoms")
+symptoms = input("Do you have any symptoms: ")
 symptoms = int(symptoms)
 
 
@@ -32,8 +31,12 @@ email_address = driver.find_element_by_xpath("//input[@name=\"QR~QID20~TEXT\"]")
     .send_keys(email_address)
 mobile_phone_number = driver.find_element_by_xpath("//input[@name=\"QR~QID21~TEXT\"]")\
     .send_keys(mobile_phone_number)
+symptoms = driver.find_element_by_xpath("/html/body/div[3]/div/form/div/div[2]/div[1]/div[3]/div[1]/div[12]/div[3]/div/fieldset/div/ul/li[12]/input").click()
+    
+   
 
 
+driver.find_element_by_xpath("//input[@name=\"NextButton\"]").click()
 
 
 
