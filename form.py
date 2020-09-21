@@ -7,7 +7,7 @@ first_name = "Aidan"
 last_name = "Suljic"
 email_address = "asuljic1@babson.edu"
 mobile_phone_number = "8472191797"
-symptoms = input("Do you have any symptoms?\nInput your symptoms as comma-separated numbers, following the below legend. For example, if you have Cough & Fatigue, enter "2,4" (without the quotes).\n0: No symptoms\n1: Fever or chills\n2: Cough\n3Shortness of breath or difficulty breathing\n4:Fatigue\n5:Muscle or body aches\n6: Headache (unlike your usual headaches)\n7: New Loss of Taste or Smell\n8: Sore Throat\n9: Congestion or runny nose\n10:Nausea or vomiting\n11: Diarrhea")
+symptoms = input("Do you have any symptoms?\nInput your symptoms as comma-separated numbers, following the below legend. \n0: No symptoms\n1: Fever or chills\n2: Cough\n3Shortness of breath or difficulty breathing\n4:Fatigue\n5:Muscle or body aches\n6: Headache (unlike your usual headaches)\n7: New Loss of Taste or Smell\n8: Sore Throat\n9: Congestion or runny nose\n10:Nausea or vomiting\n11: Diarrhea")
 symptoms = symptoms.split(',')
 symptomsDictionary = {
     "1": "QID22-1-label",
