@@ -21,10 +21,12 @@ symptomsDictionary = {
     "8": "QID22-8-label",
     "9": "QID22-9-label",
     "10": "QID22-10-label",
-    "11": "/html/body/div[3]/div/form/div/div[2]/div[1]/div[3]/div[1]/div[12]/div[3]/div/fieldset/div/ul/li[12]/span/label",
+    "11": "/html/body/div[3]/div/form/div/div[2]/div[1]/div[3]/div[1]/div[12]/div[3]/div/fieldset/div/ul/li[12]/label",
 }
 for s in symptoms:
-    driver.find_element_by_xpath(f"//input[@name='{symptomsDictionary[s]}']").click()
+    # print(s, symptomsDictionary[s])
+    # print(driver.find_element_by_id(f"{symptomsDictionary[s]}"))
+    driver.find_element_by_id(f"{symptomsDictionary[s]}").click()
 
 
 first_name = driver.find_element_by_xpath("//input[@name=\"QR~QID19~TEXT\"]")\
